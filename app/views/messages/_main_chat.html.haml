@@ -1,0 +1,36 @@
+.main-chat
+    .right-header
+        .right-header__group
+            .right-header__group-name
+                HIROTA
+            %ul.right-header__member-list
+                Member :
+                %li.right-header__member
+                    yuki
+        = link_to "#", {class:"right-header__edit-btn"} do
+            Edit
+    .message-list
+        .message-list__message-box
+            .message-list__message-info
+                .message-info__user_name
+                    yuki
+                .message-info__date
+                    2020/07/02 12:00
+            .message-list__message
+                ここにメッセージが入ります。
+        .message-list__message-box
+            .message-list__message-info
+                .message-info__user_name
+                    yuki
+                .message-info__date
+                    2020/07/02 12:00
+            .message-list__message
+                ここにメッセージが入ります。
+    .message-form
+        %form.message-form__form
+            .input-box
+                %input{type: "text", class: "input-box__form-content", placeholder: "type a message"}
+                %label{class: "input-box__img"}
+                    = icon('far', 'image')
+                    %input{type: "file", class: 'input-box__img-file'}
+            %input{type: "submit", class: "form-btn", value: "Send"}

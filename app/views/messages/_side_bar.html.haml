@@ -2,13 +2,13 @@
     .left-header
         .left-header__top-items
             %h3.left-header__name
-                yuki
+                = current_user.name
             %ul.left-header__icon-list
                 %li.left-header__icon
                     = link_to "#" do
                         = icon('fas', 'edit')
                 %li.left-header__icon
-                    = link_to "#" do
+                    = link_to edit_user_path(current_user) do
                         = icon('fas', 'cog')
     .group-list
         .group-list__group

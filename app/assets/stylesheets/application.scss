@@ -43,14 +43,16 @@
         }
         .group-list {
             background-color: #2f3e51;
-            &__group {
+            .group-list__group {
                 padding: 20px 20px 40px 20px;
-                &__group-name {
+                .group-list__group-name {
                     font-size: 16px;
+                    color: #ffffff;
                 }
                 .group-list__group-message {
                     font-size: 11px;
                     margin-top: 5px;
+                    color: #ffffff;
                 }
             }
         }
@@ -123,26 +125,26 @@
             background-color: #d2d2d2;
             height: 90px;
             padding: 20px 50px 20px 40px;
-            &__form {
+            .form {
                 display: flex;
                 .input-box {
                     width: 100%;
                     display: flex;
                     position: relative;
-                    &__form-content {
+                    .form-content {
                         height: 50px;
                         width: 100%;
                         color: #434a54;
                         padding: 0 40px 0 10px;
                         border-style: none;
                     }
-                    &__img {
+                    .img {
                         cursor: pointer;
                         font-size: 1.3rem;
                         position: absolute;
                         top: 10px;
                         right: 10px;
-                        .input-box__img-file {
+                        .img-file {
                             display: none;
                         }
                     }

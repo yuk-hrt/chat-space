@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+  gem 'faker', "~> 2.8"
   gem 'rspec-rails', '~> 4.0.0.beta2'
   gem 'factory_bot_rails'
   gem 'rails-controller-testing'
@@ -46,7 +47,7 @@ group :development do
 end
 
 group :test do
-  gem 'faker', "~> 2.8"
+  
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
@@ -62,3 +63,4 @@ gem 'devise'
 gem 'pry-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'jquery-rails'

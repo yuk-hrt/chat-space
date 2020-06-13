@@ -49,16 +49,17 @@
                 padding: 20px 20px 40px 20px;
                 a {
                     text-decoration: none;
+                    .group-list__group-name {
+                        font-size: 15px;
+                        color: #ffffff;
+                    }
+                    .group-list__group-message {
+                        font-size: 11px;
+                        margin-top: 5px;
+                        color: #ffffff;
+                    }
                 }
-                .group-list__group-name {
-                    font-size: 16px;
-                    color: #ffffff;
-                }
-                .group-list__group-message {
-                    font-size: 11px;
-                    margin-top: 5px;
-                    color: #ffffff;
-                }
+                
             }
         }
     }

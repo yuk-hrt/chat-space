@@ -27,6 +27,7 @@
                 align-items: center;
                 .left-header__name {
                     color: #fff;
+                    font-size: 16px;
                     font-weight: bold;
                 }
                 .left-header__icon-list {
@@ -35,7 +36,8 @@
                         margin-left: 5px;
                         a {
                             text-decoration: none;
-                            color: #eeeeee;
+                            font-size: 16px;
+                            color: #fff;
                         }
                     }
                 }
@@ -45,15 +47,19 @@
             background-color: #2f3e51;
             .group-list__group {
                 padding: 20px 20px 40px 20px;
-                .group-list__group-name {
-                    font-size: 16px;
-                    color: #ffffff;
+                a {
+                    text-decoration: none;
+                    .group-list__group-name {
+                        font-size: 15px;
+                        color: #ffffff;
+                    }
+                    .group-list__group-message {
+                        font-size: 11px;
+                        margin-top: 5px;
+                        color: #ffffff;
+                    }
                 }
-                .group-list__group-message {
-                    font-size: 11px;
-                    margin-top: 5px;
-                    color: #ffffff;
-                }
+                
             }
         }
     }

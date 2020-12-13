@@ -29,6 +29,11 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
   gem 'faker', "~> 2.8"
   gem 'rspec-rails', '~> 4.0.0.beta2'
   gem 'factory_bot_rails'
@@ -55,6 +60,10 @@ group :test do
   gem 'webdrivers'
 end
 
+group :production do
+  gem 'unicorn', '5.4.1'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
@@ -62,5 +71,6 @@ gem 'font-awesome-sass'
 gem 'devise'
 gem 'pry-rails'
 gem 'carrierwave'
+gem 'fog-aws'
 gem 'mini_magick'
 gem 'jquery-rails'
